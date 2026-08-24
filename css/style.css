@@ -497,3 +497,18 @@ width: 100px;
 #footer{
     background: #111111;
 }
+.footer-sec{
+    font-size: 17px !important;
+     color: rgb(153, 149, 149); 
+}
+.footer-copyright-text{
+    border-top: 0.5px solid rgb(83, 80, 80);
+     padding-top: 30px;
+}
+.footer-copyright-text p{
+    color: rgb(153, 149, 149);
+}
+.footer-about{
+    font-size: 17px !important;
+    color: rgb(153, 149, 149);
+}
