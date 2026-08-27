@@ -135,56 +135,79 @@
     display: inline-block;
 }
 
-.shop-sidebar-search form input {
+
+/* PRODUCTS SECTION */
+#product .row{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.main{
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+}
+.about-img{
     width: 100%;
-    font-size: 15px;
-    color: rgb(183, 183, 183);
-    padding-left: 20px;
-    height: 42px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(229, 229, 229);
-    border-image: initial;
+    display: block;
 }
-.shop-sidebar-search form button {
-    color: rgb(183, 183, 183);
-    font-size: 15px;
+.product-action{
     position: absolute;
-    right: 0px;
-    top: 0px;
-    height: 100%;
-    border-width: initial;
-    border-style: none;
-    border-color: initial;
-    border-image: initial;
-    background: transparent;
-    padding: 0px 15px;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    transform: translateX(10px);
+    
 }
-.shop-product-option p {
-    color: rgb(17, 17, 17);
-    margin-bottom: 0px;
+.icon-btn{
+    background: #ffffff;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main:hover .product-action{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+.main:hover .add-to-cart{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+ .add-to-cart{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
     font-size: 15px;
-    font-family: "Nunito Sans", sans-serif;
-    color: rgb(61, 61, 61);
-    font-weight: 400;
-    line-height: 25px;
-    margin: 0px 0px 15px;
+    transition: all;
+    visibility: hidden;
+    transform: translateY(5px);
 }
-.shop-product-option-right p {
-    display: inline-block;
-    margin-bottom: 0px;
+.title-card-wrapper{
+    position: relative;
+    height: 24px;
+    margin-top: 20px;
 }
-.shop-product-cption p {
-    color: rgb(17, 17, 17) !important;
-    margin-bottom: 0px;
+.product-title{
+    color: #111111;
+    opacity: 1;
+    visibility: visible;
+
+
 }
-p {
-    font-size: 15px;
-    font-family: "Nunito Sans", sans-serif;
-    color: rgb(61, 61, 61);
-    font-weight: 400;
-    line-height: 25px;
-    margin: 0px 0px 15px;
+.main:hover .product-title{
+    opacity: 0;
+    visibility: hidden;
 }
 
 
